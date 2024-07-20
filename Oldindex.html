@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Open in Excel</title>
-    <script type="text/javascript">
-        function showPopup() {
-            alert("Please view the Excel file using the link below.");
-            // Use a short delay to allow the alert to be shown before redirecting
-            setTimeout(function() {
-                window.location.href = "https://drive.google.com/file/d/1vKMZ8bxdUYknVgASmIgDuBzhG8R5ioMp/view?usp=sharing";
-            }, 1000); // 1-second delay
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer</title>
 </head>
 <body>
-    <button onclick="showPopup()">Open in Excel</button>
+    <h1>View the Document</h1>
+    <iframe src="https://drive.google.com/file/d/1vKMZ8bxdUYknVgASmIgDuBzhG8R5ioMp/preview" width="100%" height="600px"></iframe>
 </body>
 </html>

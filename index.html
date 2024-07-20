@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>View Excel File</title>
+    <title>Open in Excel</title>
+    <script type="text/javascript">
+        function showPopup() {
+            alert("Please open your Excel file on your desktop.");
+            // Use a short delay to allow the alert to be shown before redirecting
+            setTimeout(function() {
+                window.location.href = 'https://drive.google.com/uc?export=view&id=1vKMZ8bxdUYknVgASmIgDuBzhG8R5ioMp';
+            }, 1000); // 1-second delay
+        }
+    </script>
 </head>
 <body>
-    <iframe src="https://drive.google.com/viewer?embed=true&url=https://drive.google.com/uc?id=1vKMZ8bxdUYknVgASmIgDuBzhG8R5ioMp" width="100%" height="600" frameborder="0"></iframe>
+    <button onclick="showPopup()">Open in Excel</button>
 </body>
 </html>
